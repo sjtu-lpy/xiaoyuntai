@@ -1,0 +1,3 @@
+C:/RMdiankong/competition_test/cmake-build-debug-mingw--stm32/CMakeFiles/competition_test.elf.dir
+C:/RMdiankong/competition_test/cmake-build-debug-mingw--stm32/CMakeFiles/edit_cache.dir
+C:/RMdiankong/competition_test/cmake-build-debug-mingw--stm32/CMakeFiles/rebuild_cache.dir

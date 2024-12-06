@@ -1,0 +1,198 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=8VRJ7-ECU4E-LQ70Q-N38VN-BXKR2-S4UL5
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\RMdiankong\competition_test\MDK-ARM\competition_test.uvprojx
+Project File Date:  12/04/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'competition_test'
+Note: source file '../Core/Src/system_stm32f4xx.c' - object file renamed from 'competition_test\system_stm32f4xx.o' to 'competition_test\system_stm32f4xx_1.o'.
+compiling spi.c...
+../Core/Src/Motor.cpp(4): warning: In file included from...
+../Core/Inc\Motor.h(15): warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+    CAN_RxHeaderTypeDef rxHeader={(uint32_t)0x204 + id,0,0,0,8};
+                                ^
+../Core/Inc\Motor.h(25): warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+    PID speed_pid = PID(kp1,ki1,kd1,i_max1,out_max1);
+                  ^
+../Core/Inc\Motor.h(26): warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+    PID angle_pid = PID(kp2,ki2,kd2,i_max2,out_max2);
+                  ^
+../Core/Inc\Motor.h(15): warning: field 'id' is uninitialized when used here [-Wuninitialized]
+    CAN_RxHeaderTypeDef rxHeader={(uint32_t)0x204 + id,0,0,0,8};
+                                                    ^
+../Core/Src/Motor.cpp(10): note: during field initialization in this constructor
+Motor::Motor(int id,float reduction_ratio){
+       ^
+../Core/Src/Motor.cpp(4): warning: In file included from...
+../Core/Inc\Motor.h(25): warning: field 'kp1' is uninitialized when used here [-Wuninitialized]
+    PID speed_pid = PID(kp1,ki1,kd1,i_max1,out_max1);
+                        ^
+../Core/Src/Motor.cpp(10): note: during field initialization in this constructor
+Motor::Motor(int id,float reduction_ratio){
+       ^
+../Core/Src/Motor.cpp(4): warning: In file included from...
+../Core/Inc\Motor.h(25): warning: field 'ki1' is uninitialized when used here [-Wuninitialized]
+    PID speed_pid = PID(kp1,ki1,kd1,i_max1,out_max1);
+                            ^
+../Core/Src/Motor.cpp(10): note: during field initialization in this constructor
+Motor::Motor(int id,float reduction_ratio){
+       ^
+../Core/Src/Motor.cpp(4): warning: In file included from...
+../Core/Inc\Motor.h(25): warning: field 'kd1' is uninitialized when used here [-Wuninitialized]
+    PID speed_pid = PID(kp1,ki1,kd1,i_max1,out_max1);
+                                ^
+../Core/Src/Motor.cpp(10): note: during field initialization in this constructor
+Motor::Motor(int id,float reduction_ratio){
+       ^
+../Core/Src/Motor.cpp(4): warning: In file included from...
+../Core/Inc\Motor.h(25): warning: field 'i_max1' is uninitialized when used here [-Wuninitialized]
+    PID speed_pid = PID(kp1,ki1,kd1,i_max1,out_max1);
+                                    ^
+../Core/Src/Motor.cpp(10): note: during field initialization in this constructor
+Motor::Motor(int id,float reduction_ratio){
+       ^
+../Core/Src/Motor.cpp(4): warning: In file included from...
+../Core/Inc\Motor.h(25): warning: field 'out_max1' is uninitialized when used here [-Wuninitialized]
+    PID speed_pid = PID(kp1,ki1,kd1,i_max1,out_max1);
+                                           ^
+../Core/Src/Motor.cpp(10): note: during field initialization in this constructor
+Motor::Motor(int id,float reduction_ratio){
+       ^
+../Core/Src/Motor.cpp(4): warning: In file included from...
+../Core/Inc\Motor.h(26): warning: field 'kp2' is uninitialized when used here [-Wuninitialized]
+    PID angle_pid = PID(kp2,ki2,kd2,i_max2,out_max2);
+                        ^
+../Core/Src/Motor.cpp(10): note: during field initialization in this constructor
+Motor::Motor(int id,float reduction_ratio){
+       ^
+../Core/Src/Motor.cpp(4): warning: In file included from...
+../Core/Inc\Motor.h(26): warning: field 'ki2' is uninitialized when used here [-Wuninitialized]
+    PID angle_pid = PID(kp2,ki2,kd2,i_max2,out_max2);
+                            ^
+../Core/Src/Motor.cpp(10): note: during field initialization in this constructor
+Motor::Motor(int id,float reduction_ratio){
+       ^
+../Core/Src/Motor.cpp(4): warning: In file included from...
+../Core/Inc\Motor.h(26): warning: field 'kd2' is uninitialized when used here [-Wuninitialized]
+    PID angle_pid = PID(kp2,ki2,kd2,i_max2,out_max2);
+                                ^
+../Core/Src/Motor.cpp(10): note: during field initialization in this constructor
+Motor::Motor(int id,float reduction_ratio){
+       ^
+../Core/Src/Motor.cpp(4): warning: In file included from...
+../Core/Inc\Motor.h(26): warning: field 'i_max2' is uninitialized when used here [-Wuninitialized]
+    PID angle_pid = PID(kp2,ki2,kd2,i_max2,out_max2);
+                                    ^
+../Core/Src/Motor.cpp(10): note: during field initialization in this constructor
+Motor::Motor(int id,float reduction_ratio){
+       ^
+../Core/Src/Motor.cpp(4): warning: In file included from...
+../Core/Inc\Motor.h(26): warning: field 'out_max2' is uninitialized when used here [-Wuninitialized]
+    PID angle_pid = PID(kp2,ki2,kd2,i_max2,out_max2);
+                                           ^
+../Core/Src/Motor.cpp(10): note: during field initialization in this constructor
+Motor::Motor(int id,float reduction_ratio){
+       ^
+14 warnings generated.
+compiling Motor.cpp...
+compiling stm32f4xx_hal_msp.c...
+compiling main.c...
+assembling startup_stm32f407xx.s...
+compiling PID.cpp...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+../Core/Src/IMU.cpp(4): warning: In file included from...
+../Core/Inc\IMU.h(16): warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+    float pitch,roll,yaw,K = 0.003;//结算出的三轴角度及加速度权重K
+                           ^
+1 warning generated.
+compiling IMU.cpp...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+../Core/Src/callback.cpp(9): warning: In file included from...
+../Core/Inc\IMU.h(16): warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+    float pitch,roll,yaw,K = 0.003;//结算出的三轴角度及加速度权重K
+                           ^
+../Core/Src/callback.cpp(10): warning: In file included from...
+../Core/Inc\Motor.h(15): warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+    CAN_RxHeaderTypeDef rxHeader={(uint32_t)0x204 + id,0,0,0,8};
+                                ^
+../Core/Inc\Motor.h(25): warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+    PID speed_pid = PID(kp1,ki1,kd1,i_max1,out_max1);
+                  ^
+../Core/Inc\Motor.h(26): warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+    PID angle_pid = PID(kp2,ki2,kd2,i_max2,out_max2);
+                  ^
+4 warnings generated.
+compiling callback.cpp...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling can.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_it.c...
+compiling gpio.c...
+compiling tim.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_can.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_exti.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_spi.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_tim.c...
+linking...
+Program Size: Code=17080 RO-data=628 RW-data=100 ZI-data=2284  
+FromELF: creating hex file...
+"competition_test\competition_test.axf" - 0 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.16.0.pack
+                Keil.STM32F4xx_DFP.2.16.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_competition_test
+  C:/Users/26279/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/26279/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
